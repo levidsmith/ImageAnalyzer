@@ -347,33 +347,6 @@ def analyzeChunkDataIDAT(data)
 	uncompressed_data = Zlib::Inflate.inflate(data.pack("C*"))
 	puts "  uncompressed data (decimal): " + uncompressed_data.unpack("C*").join(" ")
 	puts "  uncompressed data:           " + uncompressed_data
-	
-	
-	
-#	zi = Zlib::Inflate.new(iAdditionalFlags)
-#	zi.inflate(compressed_data.to_s)
-#	zi.inflate(data.to_s)
-
-
-#	uncompressed_data = Zlib::Inflate.inflate(compressed_data.to_s)
-#	uncompressed_data = Zlib::Inflate.inflate(compressed_data.to_s)
-#	puts "  uncompressed data: " + uncompressed_data.unpack("C*").join(" ")
-
-
-	
-	### TEST
-=begin
-	puts ""
-	puts ""
-	puts "Hello World test"
-	test_uncompressed = "Hello World"
-	puts "uncompressed: " + test_uncompressed
-	test_compressed = Zlib::Deflate.deflate(test_uncompressed)
-	puts "compressed: " + test_compressed
-	test_uncompressed_again = Zlib::Inflate.inflate(test_compressed)
-	puts " uncompressed again: " + test_uncompressed_again
-=end
-	
 
 end
 
@@ -419,6 +392,4 @@ def check_sequence(seq, arr, iIndex)
 end
 
 
-#generate_png()
-#load_bmp()
 load_png()
