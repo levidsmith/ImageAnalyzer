@@ -11,6 +11,15 @@ end
 
 def load_png() 
 	strFile = "../images/bbgcamyw_png2.png"
+#	strFile = "../images/test_png_2x2_red.png"
+#	strFile = "../images/test_png_2x2_cyan.png"
+#	strFile = "../images/test_png_2x2_white.png"
+#	strFile = "../images/test_png_2x2_black_and_white.png"
+#	strFile = "../images/test_png_1x4_blue.png"
+#	strFile = "../images/test_png_4x1_blue.png"
+#	strFile = "../images/test_png_1x4_royg.png"
+#	strFile = "../images/test_png_4x1_royg.png"
+#	strFile = "my.png"
 	iSize = File.size(strFile)
 	f = File.open(strFile)
 	contents = f.read(iSize)
